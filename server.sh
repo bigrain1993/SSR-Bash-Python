@@ -283,6 +283,6 @@ if [[ $serverc == 10 ]];then
 fi	
 
 if [[ $serverc == 11 ]];then
-    wget -qO- https://raw.githubusercontent.com/oooldking/script/master/superbench.sh
-	bash /usr/local/SSR-Bash-Python/server.sh
+	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+		bash /usr/local/SSR-Bash-Python/server.sh
 fi
