@@ -35,9 +35,6 @@
 ## 安装&更新 ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/HeroSixo4/SSR-Bash-Python/master/install.sh && bash install.sh
 
-## 自检（没有卵用😝） ##
-    wget -q -N --no-check-certificate https://raw.githubusercontent.com/HeroSixo4/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
-
 ## 卸载 ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/HeroSixo4/SSR-Bash-Python/master/install.sh && bash install.sh uninstall
 
