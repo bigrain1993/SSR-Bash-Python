@@ -35,7 +35,7 @@ for x in json:
 		break
 
 if(portexist==0):
-	getport = "未找到此端口，请检查是否输入错误！"
+	getport = "This port was not found, please check if you entered the error!"
 	d_int = ""
 	d_unit = ""
 	transfer_enable_int = ""
@@ -54,7 +54,7 @@ header = '''
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>流量查询</title>
+	<title>Traffic query</title>
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
 
@@ -72,7 +72,7 @@ header = '''
     <div class="content">
         <div class="content-heading">
             <div class="container">
-                <h1 class="heading">&nbsp;&nbsp;流量查询</h1>
+                <h1 class="heading">&nbsp;&nbsp;Traffic query</h1>
             </div>
         </div>
         <div class="content-inner">
@@ -86,7 +86,7 @@ footer = '''
     </div>
 	<footer class="footer">
 		<div class="container">
-			<p>Function Club</p>
+			<p>Pocket</p>
 		</div>
 	</footer>
 
@@ -106,11 +106,11 @@ formhtml = '''
 							<div class="card card-alt card-alt-bg">
 								<div class="card-main">
 									<div class="card-inner">
-										<p class="card-heading">端口：%s</p>
+										<p class="card-heading">port:%s</p>
 										<p>
-											已使用流量：%s %s <br>
-											总流量限制：%s %s </br></br>
-											<a href="../index.html"><button class="btn" type="button">返回</button></a>
+											Used traffic:%s %s <br>
+											Total flow limit:%s %s </br></br>
+											<a href="../index.html"><button class="btn" type="button">return</button></a>
 										</p>
 									</div>
 								</div>

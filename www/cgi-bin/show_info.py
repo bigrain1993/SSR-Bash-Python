@@ -33,7 +33,7 @@ for x in json:
 		break
 
 if(portexist==0):
-	getport = "未找到此端口，请检查是否输入错误！"
+	getport = "This port was not found, please check if you entered the error!"
 	myip = ""
 	getpasswd = ""
 	jsonmethod = ""
@@ -41,7 +41,7 @@ if(portexist==0):
 	jsonobfs = ""
 
 if(portexist!=0 and passwdcorrect==0):
-	getport = "连接密码输入错误，请重试"
+	getport = "Connection password input error, please try again!"
 	myip = ""
 	getpasswd = ""
 	jsonmethod = ""
@@ -56,7 +56,7 @@ header = '''
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>连接信息</title>
+	<title>Connection information</title>
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
 
@@ -74,7 +74,7 @@ header = '''
     <div class="content">
         <div class="content-heading">
             <div class="container">
-                <h1 class="heading">&nbsp;&nbsp;连接信息</h1>
+                <h1 class="heading">&nbsp;&nbsp;Connection information</h1>
             </div>
         </div>
         <div class="content-inner">
@@ -88,7 +88,7 @@ footer = '''
     </div>
 	<footer class="footer">
 		<div class="container">
-			<p>Function Club</p>
+			<p>Pocket</p>
 		</div>
 	</footer>
 
@@ -109,22 +109,22 @@ formhtml = '''
 						
 						<div class="col-lg-4 col-sm-6">
 							<div class="card card-green">
-								<a class="card-side" href="/"><span class="card-heading">连接信息</span></a>
+								<a class="card-side" href="/"><span class="card-heading">Connection information</span></a>
 								<div class="card-main">
 									<div class="card-inner">
 									<p>
-										<strong>服务器地址：</strong> %s </br></br>
-										<strong>连接端口：</strong> %s </br></br>
-										<strong>连接密码：</strong> %s </br></br>
-										<strong>加密方式： </strong> %s </br></br>
-										<strong>协议方式： </strong> </br>%s </br></br>
-										<strong>混淆方式：</strong> </br>%s 
+										<strong>Server address:</strong> %s </br></br>
+										<strong>Connection port:</strong> %s </br></br>
+										<strong>Connection password:</strong> %s </br></br>
+										<strong>Encryption:</strong> %s </br></br>
+										<strong>Agreement method:</strong> </br>%s </br></br>
+										<strong>Confusion method:</strong> </br>%s 
 										</p>
 									</div>
 									<div class="card-action">
 										<ul class="nav nav-list pull-left">
 											<li>
-												<a href="../index.html"><span class="icon icon-check"></span>&nbsp;返回</a>
+												<a href="../index.html"><span class="icon icon-check"></span>&nbsp;return</a>
 											</li>
 										</ul>
 									</div>
