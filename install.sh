@@ -209,7 +209,7 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
     if [[ $yn == [yY] ]];then
         rm -rf /usr/local/SSR-Bash-Python
         cd /usr/local
-        git clone https://github.com/FunctionClub/SSR-Bash-Python.git
+        git clone https://github.com/HeroSixo4/SSR-Bash-Python.git
     fi
     cd /usr/local/SSR-Bash-Python
     git checkout master
@@ -220,7 +220,7 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
     fi
 else
     cd /usr/local
-    git clone https://github.com/FunctionClub/SSR-Bash-Python.git
+    git clone https://github.com/HeroSixo4/SSR-Bash-Python.git
     cd SSR-Bash-Python
     git checkout master
     if [[ $1 == "develop" ]];then
@@ -305,10 +305,10 @@ fi
 fi
 #Install SSR-Bash Background
 if [[ $1 == "develop" ]];then
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/HeroSixo4/SSR-Bash-Python/master/ssr
 	chmod +x /usr/local/bin/ssr
 else
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/HeroSixo4/SSR-Bash-Python/master/ssr
 	chmod +x /usr/local/bin/ssr
 fi
 
@@ -343,7 +343,7 @@ if [[ $1 == develop ]];then
         	nohup bash servercheck.sh run 2>/dev/null &
         	PID=$(ps -ef |grep -v grep | grep "bash" | grep "servercheck.sh" | grep "run" | awk '{print $2}')
         	if [[ -z ${PID} ]];then
-            	echo "程序启动失败,请联系作者"
+            	echo "程序启动失败"
             fi
         else
         	echo "你居然拒绝了T.T"
@@ -371,9 +371,3 @@ bash /usr/local/SSR-Bash-Python/self-check.sh
 echo '安装完成！输入 ssr 即可使用本程序~'
 if [[ ${check} != "yes" ]] ;then
         echo "如果你执行 ssr 提示找不到命令，请尝试退出并重新登录来解决"
-fi
-echo '原作者已经停止本脚本更新，此版本为作者删除项目前最后一个版本魔改而来'
-echo '不喜勿喷!'
-echo '谨慎使用！仅供研究！'
-echo '谨慎使用！仅供研究！'
-echo '谨慎使用！仅供研究！'
